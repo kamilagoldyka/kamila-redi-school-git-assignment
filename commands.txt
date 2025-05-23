@@ -1,0 +1,54 @@
+# SSH and GitHub Setup
+
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"  
+## Creates a new SSH key to connect securely with GitHub
+
+cat ~/.ssh/id_rsa.pub  
+## Shows your SSH public key so you can copy it
+
+# Git User Configuration 
+
+git config --global user.name "Your Name"  
+## Sets your name in Git commits
+
+git config --global user.email "your_email@example.com"  
+## Sets your email in Git commits
+
+# Navigation
+
+cd ~  
+## Moves to your home directory (a safe starting point)
+
+cd your_repository_address  
+## Enters the cloned repository folder
+
+# Git Basics
+
+git clone git@github.com:yourusername/your-repo.git  
+## Clones a GitHub repo using SSH
+
+git status  
+## Shows which files are changed, staged, or untracked
+
+git add README.md  
+## Stages the file so it will be included in the next commit
+
+git commit -m "Your message"  
+## Commits staged changes with a meaningful message
+
+git log  
+## Shows the history of commits in your repository
+
+git push origin main  
+## Pushes your local commits to the GitHub 'main' branch
+
+# Extra Git Commands 
+
+git init  
+## Initializes a new Git repository in the current folder
+
+git diff  
+## Shows what changed in files before committing
+
+touch commands.txt  
+## Creates a new empty file (on macOS/Linux)
